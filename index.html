@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas object</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Objeto CANVAS</h1>
+  <div class="canvas-container">
+    <canvas id="canvas" width="900" height="600"></canvas>
+    <div class="canvas-options">
+      <button id="btn-retangulo">Inserir retângulo</button>
+      <button id="texto">Inserir texto</button>
+      <button id="export">Exportar em PNG</button>
+      <button id="clear-canvas">Limpar</button>
+    </div>
+    <div id="texto-container" style="display: none;">
+      <input type="text" id="texto-input">
+      <button id="insert-text">Inserir</button>
+    </div>
+    <div id="rectangle-personalization-container" style="display: none;">
+      <div class="input-group">
+          <label>Cor da borda: </label>
+          <input type="color" id="corBorda">
+      </div>
+      <div class="input-group">
+          <label>Cor do preenchimento: </label>
+          <input type="color" id="corPreenchimento">
+      </div>
+      <div class="input-group">
+        <label for="borderRadius">Raio:</label>
+        <input type="range" id="borderRadius" min="0">
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
